@@ -1,0 +1,18 @@
+
+> procurement-radar-api@0.1.0 start /home/ubuntu/tool_project/extracted_optimized
+> node src/index.js
+
+[32minfo[39m: ProcurementRadar API running on port 3000 {"service":"procurement-radar-api","timestamp":"2026-01-28T02:12:43.499Z"}
+[32minfo[39m: Environment: development {"service":"procurement-radar-api","timestamp":"2026-01-28T02:12:43.502Z"}
+[32minfo[39m: GET /health {"ip":"::ffff:127.0.0.1","service":"procurement-radar-api","timestamp":"2026-01-28T02:12:55.372Z","userAgent":"curl/7.81.0"}
+[32minfo[39m: GET /api/tenders {"ip":"::ffff:127.0.0.1","service":"procurement-radar-api","timestamp":"2026-01-28T02:12:59.203Z","userAgent":"curl/7.81.0"}
+[32minfo[39m: GET /api/tenders {"ip":"::ffff:127.0.0.1","service":"procurement-radar-api","timestamp":"2026-01-28T02:13:05.284Z","userAgent":"curl/7.81.0"}
+[34mdebug[39m: Database pool: new client connected {"service":"procurement-radar-api","timestamp":"2026-01-28T02:13:05.306Z"}
+[34mdebug[39m: Query executed {"duration":26,"rows":1,"service":"procurement-radar-api","text":"SELECT id, email, subscription_tier, is_active \n       FROM users WHERE api_key = $1","timestamp":"2026-01-28T02:13:05.311Z"}
+[34mdebug[39m: Query executed {"duration":2,"rows":1,"service":"procurement-radar-api","text":"SELECT COUNT(*) FROM tenders ","timestamp":"2026-01-28T02:13:05.315Z"}
+[34mdebug[39m: Query executed {"duration":3,"rows":20,"service":"procurement-radar-api","text":"\n      SELECT \n        id, source_id, source, title, cpv_codes, \n        authority_name, authority_t","timestamp":"2026-01-28T02:13:05.319Z"}
+[32minfo[39m: GET /health {"ip":"::ffff:10.20.84.1","service":"procurement-radar-api","timestamp":"2026-01-28T02:13:15.812Z","userAgent":"curl/7.81.0"}
+[32minfo[39m: GET /api/tenders {"ip":"::ffff:10.20.84.1","service":"procurement-radar-api","timestamp":"2026-01-28T02:13:20.215Z","userAgent":"curl/7.81.0"}
+[34mdebug[39m: Query executed {"duration":1,"rows":1,"service":"procurement-radar-api","text":"SELECT id, email, subscription_tier, is_active \n       FROM users WHERE api_key = $1","timestamp":"2026-01-28T02:13:20.216Z"}
+[34mdebug[39m: Query executed {"duration":1,"rows":1,"service":"procurement-radar-api","text":"SELECT COUNT(*) FROM tenders ","timestamp":"2026-01-28T02:13:20.217Z"}
+[34mdebug[39m: Query executed {"duration":2,"rows":20,"service":"procurement-radar-api","text":"\n      SELECT \n        id, source_id, source, title, cpv_codes, \n        authority_name, authority_t","timestamp":"2026-01-28T02:13:20.219Z"}
